@@ -1,0 +1,147 @@
+@import '../../theme-chalk/numerical/index.less';
+@import '../../theme-chalk/color/index.less';
+@import './button.less';
+.in-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  height: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--in-button-text-color);
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.1s;
+  font-weight: var(--in-button-font-weight);
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background-color: var(--in-button-bg-color);
+  border: var(--in-border);
+  border-color: var(--in-button-border-color);
+  padding: 8px 15px;
+  font-size: var(--in-font-size-base);
+  border-radius: var(--in-border-radius-base);
+  &:active {
+    color: var(--in-button-active-text-color);
+    border-color: var(--in-button-active-border-color);
+    background-color: var(--in-button-active-bg-color);
+    outline: none;
+  }
+  &:hover,
+  &:focus {
+    color: var(--in-button-hover-text-color);
+    border-color: var(--in-button-hover-border-color);
+    background-color: var(--in-button-hover-bg-color);
+    outline: none;
+  }
+  // 圆角样式
+  &.is-round {
+    border-radius: var(--in-border-radius-round);
+  }
+  &.is-round {
+    padding: 8px 15px;
+  }
+  // 全圆
+  &.is-circle {
+    border-radius: 50%;
+    padding: 8px;
+  }
+  // 禁用样式
+  &.is-disabled,
+  &.is-disabled:hover,
+  &.is-disabled:focus {
+    color: var(--in-button-disabled-text-color);
+    cursor: not-allowed;
+    background-image: none;
+    background-color: var(--in-button-disabled-bg-color);
+    border-color: var(--in-button-disabled-border-color);
+  }
+}
+// plain禁用样式
+.in-button--primary.is-plain.is-disabled,
+.in-button--primary.is-plain.is-disabled:hover,
+.in-button--primary.is-plain.is-disabled:focus,
+.in-button--primary.is-plain.is-disabled:active,
+.in-button--primary.is-text.is-disabled,
+.in-button--primary.is-text.is-disabled:hover,
+.in-button--primary.is-text.is-disabled:focus,
+.in-button--primary.is-text.is-disabled:active,
+.in-button--primary.is-link.is-disabled,
+.in-button--primary.is-link.is-disabled:hover,
+.in-button--primary.is-link.is-disabled:focus,
+.in-button--primary.is-link.is-disabled:active {
+  color: var(--in-color-primary-light-5);
+  background-color: var(--in-color-primary-light-9);
+  border-color: var(--in-color-primary-light-8);
+}
+
+.in-button--success.is-plain.is-disabled,
+.in-button--success.is-plain.is-disabled:hover,
+.in-button--success.is-plain.is-disabled:focus,
+.in-button--success.is-plain.is-disabled:active,
+.in-button--success.is-text.is-disabled,
+.in-button--success.is-text.is-disabled:hover,
+.in-button--success.is-text.is-disabled:focus,
+.in-button--success.is-text.is-disabled:active,
+.in-button--success.is-link.is-disabled,
+.in-button--success.is-link.is-disabled:hover,
+.in-button--success.is-link.is-disabled:focus,
+.in-button--success.is-link.is-disabled:active {
+  color: var(--in-color-success-light-5);
+  background-color: var(--in-color-success-light-9);
+  border-color: var(--in-color-success-light-8);
+}
+
+.in-button--info.is-plain.is-disabled,
+.in-button--info.is-plain.is-disabled:hover,
+.in-button--info.is-plain.is-disabled:focus,
+.in-button--info.is-plain.is-disabled:active,
+.in-button--info.is-text.is-disabled,
+.in-button--info.is-text.is-disabled:hover,
+.in-button--info.is-text.is-disabled:focus,
+.in-button--info.is-text.is-disabled:active,
+.in-button--info.is-link.is-disabled,
+.in-button--info.is-link.is-disabled:hover,
+.in-button--info.is-link.is-disabled:focus,
+.in-button--info.is-link.is-disabled:active {
+  color: var(--in-color-info-light-5);
+  background-color: var(--in-color-info-light-9);
+  border-color: var(--in-color-info-light-8);
+}
+
+.in-button--warning.is-plain.is-disabled,
+.in-button--warning.is-plain.is-disabled:hover,
+.in-button--warning.is-plain.is-disabled:focus,
+.in-button--warning.is-plain.is-disabled:active,
+.in-button--warning.is-text.is-disabled,
+.in-button--warning.is-text.is-disabled:hover,
+.in-button--warning.is-text.is-disabled:focus,
+.in-button--warning.is-text.is-disabled:active,
+.in-button--warning.is-link.is-disabled,
+.in-button--warning.is-link.is-disabled:hover,
+.in-button--warning.is-link.is-disabled:focus,
+.in-button--warning.is-link.is-disabled:active {
+  color: var(--in-color-warning-light-5);
+  background-color: var(--in-color-warning-light-9);
+  border-color: var(--in-color-warning-light-8);
+}
+
+.in-button--danger.is-plain.is-disabled,
+.in-button--danger.is-plain.is-disabled:hover,
+.in-button--danger.is-plain.is-disabled:focus,
+.in-button--danger.is-plain.is-disabled:active,
+.in-button--danger.is-text.is-disabled,
+.in-button--danger.is-text.is-disabled:hover,
+.in-button--danger.is-text.is-disabled:focus,
+.in-button--danger.is-text.is-disabled:active,
+.in-button--danger.is-link.is-disabled,
+.in-button--danger.is-link.is-disabled:hover,
+.in-button--danger.is-link.is-disabled:focus,
+.in-button--danger.is-link.is-disabled:active {
+  color: var(--in-color-danger-light-5);
+  background-color: var(--in-color-danger-light-9);
+  border-color: var(--in-color-danger-light-8);
+}

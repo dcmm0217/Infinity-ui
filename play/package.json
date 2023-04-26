@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@Infinity-ui/components": "workspace:^",
+    "@Infinity-ui/icon-vue": "workspace:^"
+  }
 }
